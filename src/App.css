@@ -1,0 +1,357 @@
+:root {
+  --primary: #2c3e50;
+  --secondary: #34495e;
+  --bg-sidebar: #f8f9fa;
+  --text-dark: #333333;
+  --text-light: #7f8c8d;
+  --accent: #3498db;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: #e9ecef;
+}
+
+.cv-layout {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  min-height: 297mm; /* Ratio proche du format A4 */
+}
+
+/* Sidebar Styling */
+.cv-sidebar {
+  width: 30%;
+  background-color: var(--bg-sidebar);
+  padding: 30px 20px;
+  border-right: 1px solid #dee2e6;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.profile-section h2 {
+  margin: 5px 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.profile-title {
+  color: var(--accent);
+  font-weight: bold;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.info-section {
+  margin-bottom: 35px;
+}
+
+.info-section h3 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 8px 0;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background: #dee2e6;
+  margin: 6px 0;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Main Content Styling */
+.cv-main {
+  width: 70%;
+  padding: 40px;
+}
+
+.cv-section {
+  margin-bottom: 35px;
+}
+
+.cv-section h2 {
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cv-section hr {
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin-bottom: 15px;
+}
+
+.cv-section p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* CvItem Component Styling */
+.cv-item {
+  margin-bottom: 20px;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-item h3 {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+
+.cv-date {
+  font-size: 0.85rem;
+  color: white;
+  background: var(--accent);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.cv-item h4 {
+  margin: 4px 0 8px 0;
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.cv-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+:root {
+  --primary: #2c3e50;
+  --secondary: #34495e;
+  --bg-sidebar: #f8f9fa;
+  --text-dark: #333333;
+  --text-light: #7f8c8d;
+  --accent: #3498db;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: #e9ecef;
+}
+
+.cv-layout {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  min-height: 297mm; /* Ratio proche du format A4 */
+}
+
+/* Sidebar Styling */
+.cv-sidebar {
+  width: 30%;
+  background-color: var(--bg-sidebar);
+  padding: 30px 20px;
+  border-right: 1px solid #dee2e6;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.profile-section h2 {
+  margin: 5px 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.profile-title {
+  color: var(--accent);
+  font-weight: bold;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.info-section {
+  margin-bottom: 35px;
+}
+
+.info-section h3 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 8px 0;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background: #dee2e6;
+  margin: 6px 0;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Main Content Styling */
+.cv-main {
+  width: 70%;
+  padding: 40px;
+}
+
+.cv-section {
+  margin-bottom: 35px;
+}
+
+.cv-section h2 {
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cv-section hr {
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin-bottom: 15px;
+}
+
+.cv-section p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* CvItem Component Styling */
+.cv-item {
+  margin-bottom: 20px;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-item h3 {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+
+.cv-date {
+  font-size: 0.85rem;
+  color: white;
+  background: var(--accent);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.cv-item h4 {
+  margin: 4px 0 8px 0;
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.cv-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 100px;
+  font-family: Arial, sans-serif;
+}
+
+.app h1 {
+  color: #38bdf8;
+}
+
+.menu-deroulant {
+  width: 250px;
+  padding: 12px 15px;
+  background-color: #0f172a;
+  color: white;
+  border: 2px solid #38bdf8;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-deroulant:hover {
+  border-color: #f97316;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.menu-deroulant:focus {
+  outline: none;
+  border-color: #f97316;
+}
+
+.menu-deroulant option {
+  background-color: #0f172a;
+  color: white;
+}
+
+.app p {
+  color: #38bdf8;
+  font-weight: bold;
+}
